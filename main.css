@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.bodyfijo{
+    width: 1290px;
+    border: solid 1px black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px black;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+nav img{
+    width: auto;
+    height: 125px;
+    border: solid 1px black;
+    margin: 0;
+}
+.apartado{
+    border: solid 1px greenyellow;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.apartado a{
+    color: rgb(0, 0, 0)    ;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: solid 1px blue;
+    height: 125PX;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+}
+
+.apartado a:hover{
+    transition-duration: 0.25s;
+    background-color: rgb(196, 196, 196);
+}
