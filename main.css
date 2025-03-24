@@ -1,58 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Gabarito:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.letra1{
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.letra2{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 body{
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
     padding: 0;
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.cuerpo{
+    width: 1920px;
+}
+.principal{
+    width: 1920px;
+    height: 955px;
+    background-image: url(img/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
     display: flex;
     justify-content: center;
-}
-.tamano{
-    background-color: rgb(255, 0, 0);
-    width: 1900px;
-    height: 100%;
-}
-header, header nav, header img, header nav a{
-    margin: 0;
-    padding: 0;
-    /*border: solid 1px #000;*/
-}
-header nav{
-    display: flex;
-}
-header nav a{
-    height: 45px;
-    text-decoration: none;
-    padding-right: 50px;
-    padding-left: 50px;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    position: relative;
 }
-.menu a:hover{
-    transition-duration: 0.25s;
- background-color: rgb(218, 218, 218);
+.principal::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
 }
-header{
-    background-color: rgb(255, 255, 255);
+.logo{
+    background-color: aquamarine;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 60px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.conte1{
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0.5px 10px 0px black;
+    text-align: center;
+    z-index: 2;
 }
-header img{
-    margin: 0;
-    height: 129px;
-    width: 129px;
+.conte1 h1{
+    font-weight: bold;
 }
-main{
-    height: 900px;
+.botonprincipal{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    transform: translate(0, 250px);
+    border: none;
+    transition: transform 0.3s ease;
 }
-footer{
-    height: 200px;
-    background-color: yellowgreen;
+
+.botonprincipal:hover {
+    cursor: pointer;
+    transform: translate(0, 250px) scale(1.1);
 }
-main div img{
-    opacity: 0;
-    width: 20px;
+.espacio{
+    height: 50px;
+    width: 100%;
 }
-  
+.contenido{
+    width: 1920px;
+    height: 955px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.producto{
+    display: flex;
+
+}
+.producto img{
+    width: 400px;  /* Ancho deseado */
+    height: 450px; /* Alto deseado */
+    object-fit: cover;
+    object-position: center; /* Opcional: centra la imagen */
+}
+.texto{
+    width: 400px;
+    height: 450px;
+}
