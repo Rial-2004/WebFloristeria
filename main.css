@@ -4,7 +4,6 @@
 .letra1{
     font-weight: bold;
     font-size: 48px;
-    font-family: 'Cinzel Decorative', cursive;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@
 .letra2{
     font-weight: bold;
     font-size: 15px;
-    font-family: 'Cinzel Decorative', cursive;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -20,6 +18,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Cinzel Decorative', cursive;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -71,6 +70,10 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 .botonprincipal{
+    background-image: url(img/instagram.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 58px 58px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -101,12 +104,47 @@ body::-webkit-scrollbar {
 
 }
 .producto img{
-    width: 400px;  /* Ancho deseado */
-    height: 450px; /* Alto deseado */
+    width: 400px;
+    height: 450px;
     object-fit: cover;
-    object-position: center; /* Opcional: centra la imagen */
+    object-position: center;
 }
 .texto{
     width: 400px;
     height: 450px;
+    text-align: center;
+    margin: 0;
+    transform: translateY(50px);
+}
+.tex2{
+    font-size: 24px;
+
+}
+.tex1{
+    font-size: 32px;
+    font-weight: bold;
+
+}
+.producto img{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.ver{
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 100px;
+    border: solid 1px black;
+    z-index: 2;
+}
+.textboton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px black;
+    height: 450px;
+    width: 400px;
 }
